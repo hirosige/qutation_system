@@ -1,4 +1,4 @@
-Open Source Billing
+Quotation System
 ===================
 
 A simple web application to create and send invoices, receive payments, manage clients and companies. It generates reports of Item sales, payments, and collected revenues. It supports multi languages and multi currencies. This application is developed in Ruby on Rails v4.2.7.1. and Ruby v2.1.0. This document describes OSB application setup on ubuntu 14.04 LTS  machine.
@@ -133,23 +133,6 @@ Edit config/config.yml with your own application smtp settings.
          user_name: 'YOUR_EMAIL_HERE',
          password: 'YOUR_PASSWORD_HERE'
 
-### Step-4. Run
-#### 4.1 Background Services
-You need to start delayed_job for email delivery and other background tasks required for properly functionality of Open Source Billing by using following command
-
-    RAILS_ENV=development  bin/delayed_job start
-
-#### 4.2 Development Environment
-Your application is ready to use.  Run rails server using following command:
-
-    rails server
-
-and use your application in browser by typing in url: localhost:3000
-
-#### 4.2 Production Environment
-
-You can also configure Apache, Nginx or any other web/application server of your choice to execute OSB in production mode.
-
 Contributing
 ------------
 
@@ -158,12 +141,3 @@ Contributing
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-awesome-feature`)
 5. Create new Pull Request
-
-Contact Information
--------------------
-Jane Cady
-+1 (858) 586 7777
-
-E-mail: <jane@vteams.com> | <mia@presstigers.com> | <support@opensourcebilling.org>
-
-Homepage: <http://www.opensourcebilling.org/>
