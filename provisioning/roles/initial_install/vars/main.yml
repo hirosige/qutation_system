@@ -17,5 +17,6 @@
       "automake",
       "autogen",
       "libtool",
-      "libicu-devel"
+      "libicu-devel",
+      "cmake"
  ]
